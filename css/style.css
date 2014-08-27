@@ -1,0 +1,28 @@
+body {
+		background-color: white;
+		text-align: center;
+	}
+	img {
+		height: 300px;
+		width: auto;
+		box-shadow: 5px 0px 10px black;
+		/*border: solid 4px salmon;*/
+		display: inline-block;
+
+	}
+	.box {
+		height: 200px;
+		width: 200px;
+		border-radius: 10px;
+		background-color: salmon;
+		margin: 0 auto;
+	}
+
+	ul {
+		list-style-type: none;
+	}
+	li {
+		display: inline-block;
+		margin: 10px;
+		padding: 2px;
+	}
