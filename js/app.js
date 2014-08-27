@@ -13,8 +13,7 @@ myApp.controller('flickrCtrl', function($scope, $http) {
 					'format':'json',
 					'jsoncallback':'JSON_CALLBACK',
 					'tags': $scope.query
-
-				}
+					}
 				}).success(function(data) {
 				
 					$scope.photos = data.items;
@@ -29,29 +28,32 @@ myApp.controller('flickrCtrl', function($scope, $http) {
 			'format':'json',
 			'jsoncallback':'JSON_CALLBACK',
 			'tags': $scope.query
-
-		}
-	}).success(function(data) {
+			}
+		}).success(function(data) {
 		
 		$scope.photos = data.items;
-	})
+
+	});
 });
 
-myApp.directive('enter', function() {
-	return function(scope, element, attrs) {
-		element.bind('mouseenter', function() {
-			element.addClass(attrs.enter);
-		});
-	}
-});
 
-myApp.directive('click', function() {
-	return function(scope, element, attrs) {
-		element.bind('click', function() {
-			element.removeClass(attrs.enter);
-		});
-	}
-});
+// Add custom directives
+
+// myApp.directive('enter', function() {
+// 	return function(scope, element, attrs) {
+// 		element.bind('mouseenter', function() {
+// 			element.addClass(attrs.enter);
+// 		});
+// 	}
+// });
+
+// myApp.directive('click', function() {
+// 	return function(scope, element, attrs) {
+// 		element.bind('click', function() {
+// 			element.removeClass(attrs.enter);
+// 		});
+// 	}
+// });
 
 // myApp.directive('search', function() {
 // 	return function(scope, element, attrs) {
